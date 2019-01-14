@@ -1,6 +1,6 @@
 {
-  "name": "redux-first-router",
-  "version": "0.0.13-next",
+  "name": "redux-minimal-router",
+  "version": "1.0.0-prealpha",
   "description": "think of your app in states not routes (and, yes, while keeping the address bar in sync)",
   "main": "src/index.js",
   "scripts": {
@@ -19,6 +19,7 @@
     "semantic-release": "semantic-release pre && npm publish && semantic-release post",
     "prepublish": "npm run clean && npm run build && npm run flow-copy && npm run build:umd && npm run build:umd:min"
   },
+  "private": true,
   "repository": {
     "type": "git",
     "url": "https://github.com/faceyspacey/redux-first-router.git"

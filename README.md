@@ -1,59 +1,10 @@
-<a href="https://gitter.im/Reactlandia/Lobby" target="_blank">
-  <img alt="Edit Redux-First Router Demo" src="http://cdn.reactlandia.com/reactlandia-chat.png">
-</a>
+Other useful commit (before rudy dependency added): d4f4482315ff29495afdc8d5
 
-<a href="https://codesandbox.io/s/github/faceyspacey/redux-first-router-codesandbox" target="_blank">
-  <img alt="Edit Redux-First Router Demo" src="https://codesandbox.io/static/img/play-codesandbox.svg">
-</a>
+> **UPDATE (2017/8/15):** you can now add additional routes as part of your code splitting strategy. See [this issue comment](https://github.com/faceyspacey/redux-first-router/issues/62#issuecomment-322558836) for more info.
 
-<a href="https://github.com/faceyspacey/redux-first-router-boilerplate" target="_blank">
-  <img alt="Edit Redux-First Router Demo" src="https://cdn.reactlandia.com/boilerplate.png?a=1">
-</a>
-
-<a href="https://github.com/faceyspacey/redux-first-router-demo" target="_blank">
-  <img alt="Edit Redux-First Router Demo" src="https://cdn.reactlandia.com/demo.png">
-</a>
-
-> **UPDATE (8/15):** you can now add additional routes as part of your code splitting strategy. See [this issue comment](https://github.com/faceyspacey/redux-first-router/issues/62#issuecomment-322558836) for more info.
-
-> **UPDATE (9/5):** you can now block user navigation via the `confirmLeave` route option (and customize its appearance via the `displayConfirmLeave` option). See [this issue comment](https://github.com/faceyspacey/redux-first-router/issues/27#issuecomment-327431413) for more info. Do `yarn upgrade redux-first-router@next` to get it.
+> **UPDATE (2017/9/5):** you can now block user navigation via the `confirmLeave` route option (and customize its appearance via the `displayConfirmLeave` option). See [this issue comment](https://github.com/faceyspacey/redux-first-router/issues/27#issuecomment-327431413) for more info. Do `yarn upgrade redux-first-router@next` to get it.
 
 # Redux-First Router
-
-<p align="center">
-  <a href="https://www.npmjs.com/package/redux-first-router">
-    <img src="https://img.shields.io/npm/v/redux-first-router.svg" alt="Version" />
-  </a>
-
-  <a href="https://travis-ci.org/faceyspacey/redux-first-router">
-    <img src="https://travis-ci.org/faceyspacey/redux-first-router.svg?branch=master" alt="Build Status" />
-  </a>
-
-  <a href="https://lima.codeclimate.com/github/faceyspacey/redux-first-router/coverage">
-    <img src="https://lima.codeclimate.com/github/faceyspacey/redux-first-router/badges/coverage.svg" alt="Coverage Status"/>
-  </a>
-
-  <a href="https://greenkeeper.io">
-    <img src="https://badges.greenkeeper.io/faceyspacey/redux-first-router.svg" alt="Green Keeper" />
-  </a>
-
-  <a href="https://lima.codeclimate.com/github/faceyspacey/redux-first-router">
-    <img src="https://lima.codeclimate.com/github/faceyspacey/redux-first-router/badges/gpa.svg" alt="GPA" />
-  </a>
-
-  <a href="https://www.npmjs.com/package/redux-first-router">
-    <img src="https://img.shields.io/npm/dt/redux-first-router.svg" alt="Downloads" />
-  </a>
-  
-  <a href="https://snyk.io/test/github/faceyspacey/redux-first-router">
-    <img src="https://snyk.io/test/github/faceyspacey/redux-first-router/badge.svg" alt="Known Vulnerabilities" data-canonical-src="https://snyk.io/test/github/faceyspacey/redux-first-router">
-  </a>
-
-  <a href="https://www.npmjs.com/package/redux-first-router">
-    <img src="https://img.shields.io/npm/l/redux-first-router.svg" alt="License" />
-  </a>
-</p>
-
 
 ![redux-first-router flow chart](https://raw.githubusercontent.com/faceyspacey/redux-first-router/master/docs/redux-first-router-flow-chart.png)
 
@@ -62,21 +13,6 @@ The goal of **Redux-First Router** is to think of your app in *states*, not *rou
 
 **Articles You Should Read:**
 - **[Pre Release: Redux-First Router — A Step Beyond Redux-Little-Router](https://medium.com/@faceyspacey/pre-release-redux-first-router-a-step-beyond-redux-little-router-cd2716576aea)** 
-- **[Redux-First Router lookin Sexy on Code Sandbox](https://medium.com/faceyspacey/redux-first-router-lookin-sexy-on-code-sandbox-d9d9bea15053)** 
-- **[Redux-First Router data-fetching: solving the 80% use case for async Middleware](https://medium.com/faceyspacey/redux-first-router-data-fetching-solving-the-80-use-case-for-async-middleware-14529606c262)**
-- **[Server-Render like a Pro /w Redux-First Router in 10 steps](https://medium.com/faceyspacey/server-render-like-a-pro-w-redux-first-router-in-10-steps-b27dd93859de)** 🚀🚀🚀 *(READ THIS!)*
-
-The thinking behind this package has been: "if we were to dream up a 'Redux-first' approach to routing from the 
-ground up, what would it look like?" The result has been what we hope you feel to be one of those 
-"inversion of control" scenarios that makes a challenging problem *simple* when coming at it from a different angle.
-We hope *Redux-First Router* comes off as an obvious solution.
-
-Before we get started, there is some *prior art*, and you should [check them out](./docs/prior-art.md). **Redux-First Router**
-isn't the first stab at something like this, but--aside from this path being pre-validated--we feel it is the most complete, tested and *spot on* solution.
-We have reviewed what came before, stripped what was unnecessary, added what was needed, and generally focused on getting the ***developer experience*** right. Ultimately it offers far more than previous solutions. The best
-part is that once you set it up there's virtually nothing left to do. It's truly "set it and forget it." Let's get started.
-
-> And did we mention: **it has first class support for** ***React Navigation!***
 
 ## Installation
 
@@ -109,9 +45,7 @@ In addition, here are some key obstacles **Redux-First Router** seeks to *avoid*
 * having to render from any state that doesn't come from redux
 * cluttering component code with route-related components
 * the added complexity [and bugs] from 2 forms of state: redux state vs. routing state
-* large API surface areas  of packages/frameworks
-like `react-router` and `next.js`
-* workarounds that such large *(likely "leaky")* abstractions inevitably require to achieve a professional app
+* large API surface areas  of packages/frameworks like `react-router` and `next.js`
 * strategies as low level as possible to deal with animations. Animations coinciding with React 
 component updates *are* a problem, particularly in the browser (React Native is better). 
 "Jank" is common. Techniques  like `shouldComponentUpdate` are a must; routing frameworks 
@@ -250,35 +184,12 @@ const routesMap = {
 | /user/elm/evan-czaplicki   | <-> | { type: 'USER', payload: { cat: 'ELM', name: 'Evan Czaplicki' } } |
 
 
-## routesMap (with thunk)
-We left out one final configuration key available to you: *a thunk*.
-After the dispatch of a matching action, a thunk (if provided) will be called, allowing you to extract path parameters from the location reducer state and make asyncronous requests to get needed data:
-
-```javascript
-const userThunk = async (dispatch, getState) => {
-  const { slug } = getState().location.payload
-  const data = await fetch(`/api/user/${slug}`)
-  const user = await data.json()
-  const action = { type: 'USER_FOUND', payload: { user } }
-  
-  dispatch(action)
-}
-
-const routesMap = {
-  USER: { path: '/user/:slug', thunk: userThunk  },
-}
-```
-
-> your `thunk` should return a promise for SSR to be able to `await` for its resolution and for `updateScroll()` to be called if using our [scroll restoration package](https://github.com/faceyspacey/redux-first-router-restore-scroll).
-
 *note: visit the [location reducer docs](./docs/locationReducer) to see the `location` state's shape*
 
 | URL                     | <-> | ACTION     |
 | ----------------------- |:---:| ----------:|
 | /user/steve-jobs        | <-> | { type: 'USER', payload: { slug: 'steve-jobs' } } |
 | n/a                     | n/a | { type: 'USER_FOUND', payload: { user: { name: 'Steve Jobs', slug: 'steve-jobs' } } } |
-
-That's all folks! :+1:
 
 
 ## More Docs (they are short easy reads) 
@@ -343,15 +254,6 @@ more singular. By "singular" we mean that you don't have to think in terms of *b
 in terms of *state* after you setup your routes map. It makes your life simpler. It makes your code cleaner and easier to understand. It gives you the best control
 React + Redux has to offer when it comes to optimizing rendering for animations. 
 
-What about all the code splitting features *Next.js* has to offer?
-> They certainly crush it when it comes to code splitting. There's no doubt about it. But check out their Redux example
-where it seems to have a different `store` per page. I've asked, and they do merge, but it complicates how you will use Redux. If your app is 
-very page-like, great--but we think the whole purpose of tools like React and Redux is to build *"apps"* not *pages*. 
-The hallmark of an app is seamless animated transitions where you forget you're on a specific page. You need full
-control of rendering to do that at the highest level. `shouldComponentUpdate`, pure functions and [reselect](https://github.com/reactjs/reselect)
-become your best friends. Everything else gets in the way. And of course **Redux-First Router** stays out of the way.
-Straightup, let us know if you think we nailed it or what we're missing. Feel free to use github issues.
-
 Gee, I've never seen a Redux middleware/enhancer tool return so many things to use for configuring the store???
 >Part of what **Redux-First Router** does so well (and one of its considerations from the start) is server side rendering. All these
 aspects depend on state unique to each visit/request. The returned `middleware`, `enhancer`, `reducer` and `thunk` functions share
@@ -360,27 +262,7 @@ and we are very proud about that. But what's not is returned to you in a way tha
 requests on the server. In short, we have spared no expense to get this package as tight as possible. Watch the video below to get an 
 idea of how the system works and its overall simplicity:
 
-*video coming soon...*
-
-
 ## Contributing
 
 
-We use [commitizen](https://github.com/commitizen/cz-cli), so run `npm run cm` to make commits. A command-line form will appear, requiring you answer a few questions to automatically produce a nicely formatted commit. Releases, semantic version numbers, tags, changelogs and publishing to NPM will automatically be handled based on these commits thanks to [semantic-release](https://github.com/semantic-release/semantic-release). Be good.
-
-
-## Tests
-
-Reviewing a package's tests are a great way to get familiar with it. It's direct insight into the capabilities of the given package (if the tests are thorough). What's even better is a screenshot of the tests neatly organized and grouped (you know the whole "a picture says a thousand words" thing). 
-
-Below is a screenshot of this module's tests running in [Wallaby](https://wallabyjs.com) *("An Integrated Continuous Testing Tool for JavaScript")* which everyone in the React community should be using. It's fantastic and has taken my entire workflow to the next level. It re-runs your tests on every change along with comprehensive logging, bi-directional linking to your IDE, in-line code coverage indicators, **and even snapshot comparisons + updates for Jest!** I requestsed that feature by the way :). It's basically a substitute for live-coding that inspires you to test along your journey.
-
-
-![redux-first-router wallaby tests screenshot](./tests-screenshot-1.png)
-
-![redux-first-router wallaby tests screenshot](./tests-screenshot-2.png)
-
-## More from FaceySpacey in Reactlandia
-- [react-universal-component](https://github.com/faceyspacey/react-universal-component). It's made to work perfectly with *Redux First Router*. Together they comprise our *"frameworkless"* Redux-based approach to what Next.js does (splitting, SSR, prefetching, and routing).
-- [webpack-flush-chunks](https://github.com/faceyspacey/webpack-flush-chunks). And this is the foundation of our `Universal` product line. Make sure to check out!
-
+We use [commitizen](https://github.com/commitizen/cz-cli), so run `npm run cm` to make commits. A command-line form will appear, requiring you answer a few questions to automatically produce a nicely formatted commit. Releases, semantic version numbers, tags, changelogs and publishing to NPM will automatically be handled based on these commits thanks to [semantic-release](https://github.com/semantic-release/semantic-release).
